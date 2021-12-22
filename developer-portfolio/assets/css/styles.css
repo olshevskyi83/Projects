@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rancho&effect=shadow-fire-animation");
+/*Variables */
+:root {
+    --font-family: cursive;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bg-color: #fcfcfc;
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --primary-shadow: #000000;
+    --secondary-shadow: #a17a69;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+    --bg-navigation: #4265b3;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    /* border: 2px solid red; */
+
+}
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    background-color: var(--bg-navigation);
+    box-shadow: 0 3px 5px rgba(182, 31, 31, 0.1);
+}
+
+
+
+nav h1 {
+    color: var(--primary-color);
+    text-shadow: 2px 2px #000000;
+}
+
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+    text-shadow: 2px 2px #000000;
+    font-weight: var(--bold-font);
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: var(--secondary-color);
+    text-shadow: none;
+}
+
+nav a:active {
+    color: rgba(243, 47, 47, 0.87);
+}
+
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+    list-style-type: none;
+    margin: none;
+    padding: none;
+}
+
+
+
+
+
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 65rem;
+    margin: auto;
+}
+
+.hero img {
+    height: 37.5rem;
+    width: 37.5rem;
+}
+
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 9px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    text-align: center
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
